@@ -1026,6 +1026,7 @@ OnPageChangeListener
 				map=list.get(i);
 				number=map.get("code").toString();
 			}
+			String str="123";
 			return number;
 		}
 }

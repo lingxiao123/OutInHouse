@@ -1025,8 +1025,6 @@ OnPageChangeListener
 				Map<String, Object> map=new HashMap<String, Object>();
 				map=list.get(i);
 				number=map.get("code").toString();
-				String string="";
-				String demo="";
 			}
 			return number;
 		}

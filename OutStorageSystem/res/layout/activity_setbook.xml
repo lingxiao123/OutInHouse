@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#DCDCDC">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	   <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:background="#1C86EE"
+    	android:orientation="horizontal">
+       	   		<LinearLayout 
+	   		 	android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="2">
+	   		    	<ImageView android:id="@+id/img_return" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"  android:layout_marginTop="7dp" android:layout_gravity="left"   android:src="@drawable/ic_return"></ImageView>  
+	   		</LinearLayout>
+	   		<LinearLayout
+	   		 	android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="1">
+	   		   	      <TextView android:layout_width="wrap_content"  android:layout_gravity="left"   android:paddingTop="5dp" android:layout_marginLeft="30dp" android:layout_height="wrap_content"  android:textSize="18sp"  android:text="账套选择" android:textColor="@android:color/white"></TextView>
+	   		</LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:orientation="vertical" 
+     	android:layout_marginTop="20dp"
+     >
+            <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            >
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称:"/>
+   		<EditText
+		    android:id="@+id/name"
+		    android:layout_width="200dp"
+		    android:layout_height="30sp"
+		    android:background="@drawable/editsharp"
+		    android:ems="10"
+		    android:inputType="text" >
+	    </EditText>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+           <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数据库账套:"/>
+   		<EditText
+		    android:id="@+id/books"
+		    android:layout_width="200dp"
+		    android:layout_height="30sp"
+		    android:background="@drawable/editsharp"
+		    android:ems="10"
+		    android:inputType="text" >
+	    </EditText>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            >
+   		<Button android:id="@+id/btncheck"
+	        android:layout_width="150dp" android:layout_height="35dp" android:text="账套选择"
+	        android:textColor="#FFFFFF" android:textSize="18sp" android:layout_marginRight="5dp"
+	        android:background="@drawable/basebtn"
+	        android:layout_gravity="center"
+	        />
+	    <Button android:id="@+id/btnsave"
+	        android:layout_width="150dp" android:layout_height="35dp" android:text="保存"
+	        	        android:textColor="#FFFFFF" android:textSize="18sp" 
+	        	        android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+	        android:background="@drawable/basebtn"
+	        android:layout_gravity="center" 
+	        />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

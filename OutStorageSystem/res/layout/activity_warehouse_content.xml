@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <ListView android:id="@+id/list_product_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+	        
+	    </ListView>
+	</LinearLayout>
+    <!--<TableLayout
+        android:id="@+id/touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:hint="  "
+                android:textColor="#7ad6ff" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="编码：" />
+
+            <EditText
+                android:id="@+id/biamma"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:hint="   "
+                android:textColor="#7ad6ff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="规格：" />
+
+            <EditText
+                android:id="@+id/guige"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:hint="  "
+                android:textColor="#7ad6ff" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="数量：" />
+
+            <EditText
+                android:id="@+id/shuliang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:hint="  "
+                android:textColor="#7ad6ff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="金额：" />
+
+            <EditText
+                android:id="@+id/zongjine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:hint="  "
+                android:textColor="#7ad6ff" />
+        </TableRow>
+    </TableLayout>-->
+
+</RelativeLayout>

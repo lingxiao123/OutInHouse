@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="选择下载的选项"/>
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	        <CheckBox android:id="@+id/allcheck" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="选择/取消全部"/>
+	    </LinearLayout>
+		<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	        <CheckBox android:id="@+id/agencycheck" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="单位资料"/>
+	         <CheckBox android:id="@+id/departmentcheck" 
+	            android:layout_marginLeft="100dp"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="部门名称"/>
+	    </LinearLayout>
+	    
+		<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	       <CheckBox android:id="@+id/warehousecheck" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="仓库名称"/>
+	       <CheckBox android:id="@+id/employeecheck" 
+	            android:layout_marginLeft="100dp"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="职工信息"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	       	<CheckBox android:id="@+id/productdatacheck" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="商品资料"/>
+	        <CheckBox android:id="@+id/producttypecheck" 
+	            android:layout_marginLeft="100dp"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="商品类别"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+			 <CheckBox android:id="@+id/businesstypecheck" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="业务类型"/>
+	         <CheckBox android:id="@+id/barcodecheck"
+	            android:layout_marginLeft="100dp" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:text="条码信息"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	        <Button android:id="@+id/btnsave" 
+	            android:layout_width="150dp"
+	            android:layout_height="35dp"
+	            android:background="@drawable/basebtn" 
+	            android:textColor="#FFFFFF"
+	            android:text="保存"
+	            android:layout_gravity="center"
+	            />
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

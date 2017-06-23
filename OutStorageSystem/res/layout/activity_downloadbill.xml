@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="#1C86EE" >
+        <ImageView
+            android:id="@+id/imageViewLeft"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_return" />
+        <TextView
+            android:id="@+id/textViewCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="验货单据下载"
+            android:textColor="#ffffff" />
+        <TextView
+            android:id="@+id/imageViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:text=""
+            android:textColor="#ffffff" />
+    	</LinearLayout>
+
+        <ListView
+            android:id="@+id/billsdownitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@+id/linearLayout1" 
+            android:background="#ffffff">
+
+        </ListView>
+		<LinearLayout
+    	   android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:layout_marginTop="425dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="5dp"
+    	   android:gravity="center" >
+       <!--<Button
+            android:id="@+id/djshaixuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="全选/取消" />
+        <Button
+            android:id="@+id/yjshangchuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="下载" />--> 
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+             android:text="请单击条目下载单据" android:textColor="#FF0000" android:textSize="18sp"
+              android:gravity="center"
+             />
+    </LinearLayout>
+</RelativeLayout>

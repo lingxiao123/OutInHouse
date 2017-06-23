@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toyou.outstoragesystem.ProductWareHousingActivity"
+    >  
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="0dp"
+        android:background="#1C86EE" >
+		 
+		 <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="35dp"
+		    android:layout_weight="1"
+		    android:layout_gravity="right">		   
+       		 
+		     <ImageView
+            android:id="@+id/imageViewLeft"
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_return" />
+       		 <TextView
+       		     android:id="@+id/textViewCenter"
+       		     android:layout_width="wrap_content"
+       		     android:layout_height="wrap_content"
+       		     android:layout_weight="1"
+       		     android:layout_gravity="center"
+       		     android:gravity="center"
+       		     android:textColor="#ffffff"
+       		     android:textSize="18sp"
+       		     android:text="拣货装箱" />
+		</LinearLayout>			
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="35dp"
+		    android:layout_weight="6">    		 
+        
+        </LinearLayout>       
+    </LinearLayout>        
+     <LinearLayout
+         android:id="@+id/linearLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/linearLayout1"
+         android:background="#E0E0E0" >
+
+         <LinearLayout
+             android:id="@+id/ll_title"
+             android:layout_width="0dp"
+             android:layout_height="35dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/tv_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="3dp"
+                 android:text="表头"
+                 android:textColor="#1C86EE"
+                 android:textStyle="bold" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_detail"
+             android:layout_width="0dp"
+             android:layout_height="35dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/tv_detail"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="3dp"
+                 android:text="添加明细"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_content"
+             android:layout_width="0dp"
+             android:layout_height="35dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/tv_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="3dp"
+                 android:text="表体"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+         </LinearLayout>
+     </LinearLayout>
+    <android.support.v4.view.ViewPager
+         android:id="@+id/vp_content"
+         android:layout_width="match_parent"
+         android:background="#ffffff"
+         android:layout_marginTop="70dp"
+         android:layout_height="600dp"
+         android:layout_weight="1" >
+     </android.support.v4.view.ViewPager>
+</RelativeLayout>

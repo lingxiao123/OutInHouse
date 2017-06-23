@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#DCDCDC">
+	<LinearLayout android:id="@+id/linertool"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <LinearLayout android:id="@+id/linertoolbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	   	android:background="#1C86EE"
+	   	android:orientation="horizontal"
+	   	>
+	   		<LinearLayout 
+	   		 	android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="1" 
+	   		 >
+	   		    	  <TextView android:layout_width="wrap_content"  android:layout_gravity="right" android:paddingTop="5dp" android:layout_marginRight="45dp" android:layout_height="wrap_content"  android:textSize="18sp"  android:text="用户登录" android:textColor="@android:color/white"></TextView>
+	   		</LinearLayout>
+	   		<LinearLayout
+	   		 	android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="2" 
+	   		 >
+	   		   	      <ImageView android:id="@+id/imgset"  android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="30dp" android:layout_marginTop="7dp" android:layout_gravity="right"   android:src="@drawable/set02"></ImageView>
+	   		</LinearLayout>
+	    </LinearLayout>
+	    <Spinner
+	    android:id="@+id/sp_username"
+	    android:layout_width="match_parent"
+	    android:layout_height="30sp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/linertool"
+	    android:background="@drawable/editsharp"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="14dp" />
+	    
+	    <EditText
+	    android:id="@+id/pwd"
+	    android:layout_width="match_parent"
+	    android:layout_height="30sp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/linertool"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginRight="25dp"
+	    android:layout_marginTop="22dp"
+	    android:background="@drawable/editsharp"
+	    android:ems="10"
+	    android:inputType="textPassword" >
+
+	    <requestFocus />
+	</EditText>
+		<LinearLayout android:id="@+id/linercheck"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	>
+	<CheckBox android:text="记住密码" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp"></CheckBox>
+	</LinearLayout>	 		
+	<LinearLayout android:id="@+id/linerbtn"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	>
+	<Button android:id="@+id/btnLogin" android:background="@drawable/basebtn"  android:text="登录"  android:textColor="#FFFFFF"  android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginRight="28dp"></Button>
+	</LinearLayout>	      
+	</LinearLayout>
+
+
+</RelativeLayout>

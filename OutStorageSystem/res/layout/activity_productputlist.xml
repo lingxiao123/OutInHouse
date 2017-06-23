@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!---->
+    <ScrollView
+     android:id="@+id/scrollView_showMessages"
+     android:layout_width="fill_parent"
+     android:layout_height="400dp"
+     > 
+    <LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#1C86EE" >
+		 <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:layout_weight="1"
+		    android:layout_gravity="right">		   
+		     <ImageView
+            android:id="@+id/imageViewLeft"
+            android:layout_width="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_return" />
+       		 <TextView
+       		     android:id="@+id/textViewCenter"
+       		     android:layout_width="wrap_content"
+       		     android:layout_height="wrap_content"
+       		     android:layout_weight="1"
+       		     android:layout_gravity="center"
+       		     android:gravity="center"
+       		     android:textColor="#FFFFFF"
+       		     android:textSize="18sp"
+       		     android:text="产成品入库列表" />
+		</LinearLayout>	
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:layout_weight="6">
+		    <TextView 
+            android:id="@+id/textViewRight"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="筛选"
+                   		     android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"/>   
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+     <ListView
+            android:id="@+id/list_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ListView>  
+    </LinearLayout> 
+    </LinearLayout> 
+    
+    </ScrollView>
+    <!-- android:layout_below="@+id/sv_croll" </ScrollView>-->
+
+    	<Button 
+    	   android:id="@+id/btn_upload"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_below="@+id/scrollView_showMessages"
+           android:background="@drawable/basebtn"
+           android:textColor="#FFFFFF"
+           android:text="一键上传"
+           
+         /> 
+
+</RelativeLayout>

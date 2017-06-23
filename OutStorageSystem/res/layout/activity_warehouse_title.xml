@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:stretchColumns="1" 
+        android:focusable="true"  
+        android:focusableInTouchMode="true"  
+        >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="单据编号*" />
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:textSize="12sp"
+                android:paddingLeft="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:id="@+id/datebutton"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="单据日期*" />
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/shape"
+                android:paddingLeft="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="成产车间" />
+            <EditText
+                android:id="@+id/departmen"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:paddingLeft="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="经手人" />
+            	<!--<EditText
+                android:id="@+id/jspeople"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:paddingLeft="5dp" />  -->
+            	<Spinner android:id="@+id/sp_person"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:paddingLeft="5dp" 
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="项目" />
+            <EditText
+                android:id="@+id/project"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:paddingLeft="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="业务类型" />
+            	<!--<EditText
+                android:id="@+id/style"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:hint="自制退货"
+                android:paddingLeft="5dp" />-->
+            <Spinner android:id="@+id/sp_businesstype"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:paddingLeft="5dp" 
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="入库类别" />
+			<Spinner android:id="@+id/sp_Warehoustype"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:paddingLeft="5dp" 
+                />
+            	<!--<EditText
+                android:id="@+id/type"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:drawableRight="@drawable/ic_point"
+                android:hint="组装入库"
+                android:paddingLeft="5dp" />-->
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="制单人" />
+            <EditText
+                android:id="@+id/zdpeople"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:paddingLeft="5dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="#A9A9A9"
+                android:gravity="center"
+                android:text="备注" />
+            <EditText
+                android:id="@+id/remark"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:paddingLeft="5dp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:gravity="center" >
+        <!--  
+        <Button
+            android:id="@+id/print"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button"
+            android:text="打印" />
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button"
+            android:text="重置" />
+            -->
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button"
+            android:text="完成" />
+    </LinearLayout>
+</RelativeLayout>
